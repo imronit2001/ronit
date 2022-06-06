@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Navbar CSS */
+.navbar {
+    /* border: 2px solid black; */
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 40px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    /* background: white; */
+}
+
+.navbar.sticky {
+    background: #fff;
+    /* padding: 20px 100px;  */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.sticky .logo {
+    color: #111;
+}
+
+.navbar .logo {
+    color: black;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* font-weight: 700; */
+    letter-spacing: 2px;
+    font-family: 'Amiri', serif;
+    
+}
+
+.navbar ul {
+    position: relative;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+    list-style: none;
+}
+
+.navbar ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    border-bottom: 1px solid black;
+    /* border: 2px solid red; */
+}
+
+.navbar.sticky ul li a {
+    color: #111;
+}
+
+/* HOME CSS */
+.home {
+    /* border: 2px solid black; */
+    height: 100vh;
+}
+
+.home1 {
+    /* border: 2px solid black; */
+}
+
+.home2 {
+    /* border: 2px solid black; */
+}
+
+.home2 div p {
+    font-size: 20px;
+
+}
+
+.home2 div h1 {
+    font-size: 40px;
+    margin: -10px auto 30px auto;
+}
+.home2 div .social-link a{
+    text-decoration: none;
+    color: inherit;
+}
+.home2 div .social-link .fa-brands {
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.home2 div .social-link .fa-brands:hover {
+    transform: scale(1.5);
+    opacity: 0.8;
+}
+
+#about {
+    /* border: 2px solid black; */
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.about1 {
+    padding-left: 10%;
+}
+
+.about2 img {
+    width: 350px;
+}
+.right{
+    font-weight: 500;
+}
+
+#services {
+    /* border: 2px solid black; */
+    height: 100vh;
+    padding-top: 100px;
+}
+
+#services .services1 {
+    height: 15%;
+    margin: 0px auto;
+}
+
+#services .services1 h1 {
+    font-size: 35px;
+}
+
+#services .services1 p {
+    margin: 20px auto;
+    font-size: 20px;
+}
+
+#services .services2 {
+    /* border: 2px solid black; */
+    height: 80%;
+    margin: 0px auto;
+    flex-wrap: wrap;
+}
+
+#services .services2 .services3 {
+    /* border: 2px solid black; */
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#services .services2 .services3 h2 {
+    font-size: 20px;
+    padding: 20px;
+}
+
+#skills {
+    /* border: 2px solid black; */
+    /* height: 100vh; */
+    padding-top: 100px;
+    width: 100%;
+}
+
+#skills .skills1 {
+    height: 15%;
+    margin: -10px auto 15px auto;
+}
+
+#skills .skills1 h1 {
+    font-size: 35px;
+}
+
+#skills .skills1 p {
+    margin: 20px auto;
+    width: 75%;
+    font-size: 20px;
+    text-align: center;
+}
+
+#skills .skills2 {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Skill progress Bar  */
+.skill-bars {
+    padding: 25px 30px;
+    width: 40%;
+    /* background: #fff; */
+
+}
+
+.skill-bars .bar {
+    margin: 20px 0;
+}
+
+.skill-bars .bar:first-child {
+    margin-top: 0px;
+}
+
+.skill-bars .bar .info {
+    margin-bottom: 5px;
+}
+
+.skill-bars .bar .info span {
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-bars .bar .progress-line {
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+        0 1px rgba(255, 255, 255, 0.8);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.bar .progress-line span {
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #6665ee;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line.html span, .bar .progress-line.css span, .bar .progress-line.php span, .bar .progress-line.c span, .bar .progress-line.cpp span, .bar .progress-line.mysql span {
+    width: 90%;
+}
+.bar .progress-line.dsa span, .bar .progress-line.java span, .bar .progress-line.python span {
+    width: 80%;
+}
+.bar .progress-line.js span, .bar .progress-line.bootstrap span, .bar .progress-line.laravel span {
+    width: 70%;
+}
+.bar .progress-line.reactjs span, .bar .progress-line.jquery span {
+    width: 50%;
+}
+
+
+.progress-line span::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.progress-line span::after {
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress-line.html span::after, .progress-line.css span::after, .progress-line.php span::after, .progress-line.c span::after, .progress-line.cpp span::after, .progress-line.mysql span::after {
+    content: "90%";
+}
+.progress-line.dsa span::after, .progress-line.java span::after, .progress-line.python span::after {
+    content: "80%";
+}
+.progress-line.js span::after, .progress-line.bootstrap span::after, .progress-line.laravel span::after {
+    content: "70%";
+}
+.progress-line.reactjs span::after, .progress-line.jquery span::after {
+    content: "50%";
+}
+
+
+/* Contact  */
+#contact {
+    /* border: 2px solid black; */
+    height: 100vh;
+    padding-top: 100px;
+}
+#contact .contact1{
+    height: 15%;
+    margin: 0px auto;
+   
+}
+#contact .contact1 h1 {
+    font-size: 35px;
+}
+#contact .contact2{
+    /* border: 2px solid black; */
+    height: 100%;
+}
+#contact .contact2 form{
+    width: 75%;
+    margin: 0px auto;
+}
+#contact .contact2 form div{
+    margin: 0px;
+    padding: 0px;
+}
+#contact .contact2 form div label{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    font-size: 18px;
+}
+
+
+#contact .contact3{
+    /* border: 2px solid black; */
+    height: 100%;
+}
+
+
+#footer{
+    /* border: 2px solid black; */
+    height: 40%;
+    
+}
+#footer div .social-link a{
+    text-decoration: none;
+    color: inherit;
+}
+#footer div .social-link .fa-brands {
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#footer div .social-link .fa-brands:hover {
+    transform: scale(1.5);
+    opacity: 0.8;
+}
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: rgb(2, 2, 95);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
