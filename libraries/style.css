@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,6 +10,8 @@
 body {
     height: 100vh;
     width: 100%;
+    width: 100vw;
+    box-sizing: border-box;
 }
 
 /* Navbar CSS */
@@ -23,20 +26,20 @@ body {
     z-index: 1000;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     transition: 0.5s;
     /* background: white; */
 }
 
-.navbar.sticky {
+/* .navbar.sticky {
     background: #fff;
-    /* padding: 20px 100px;  */
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .navbar.sticky .logo {
     color: #111;
-}
+} */
 
 .navbar .logo {
     color: black;
@@ -46,12 +49,17 @@ body {
     /* font-weight: 700; */
     letter-spacing: 2px;
     font-family: 'Amiri', serif;
-    
+    /* border: 2px solid black; */
+
+    min-width: 200px;
+
 }
 
 .navbar ul {
+    /* border: 2px solid black; */
     position: relative;
     display: flex;
+    min-width: 400px;
 }
 
 .navbar ul li {
@@ -66,7 +74,8 @@ body {
     color: black;
     text-decoration: none;
 }
-.navbar ul li a:hover{
+
+.navbar ul li a:hover {
     border-bottom: 1px solid black;
     /* border: 2px solid red; */
 }
@@ -78,30 +87,54 @@ body {
 /* HOME CSS */
 .home {
     /* border: 2px solid black; */
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
+    /* padding-top: 6vw; */
+    /* flex-wrap: wrap; */
+    width: 100%;
 }
 
-.home1 {
-    /* border: 2px solid black; */
+.home .home1 {
+    /* border: 2px solid black;      */
+    width: 50%;
+    /* min-width: 350px; */
+    padding: 10px;
+}
+#home .home1 img{
+    /* width: 350px; */
+    /* width: 75%; */
+    min-width: 250px;
 }
 
 .home2 {
-    /* border: 2px solid black; */
+    /* border: 2px solid black;      */
+    width: 50%;
+    /* min-width: 350px; */
 }
-
+.home2 div{
+    width: 100%;
+}
+.typing{
+    font-size: 50px;
+}
+.home2 div h1 span{
+    font-size: 40px;
+}
 .home2 div p {
-    font-size: 20px;
-
+    font-size: 25px;
+    width: 100%;
 }
 
 .home2 div h1 {
     font-size: 40px;
     margin: -10px auto 30px auto;
 }
-.home2 div .social-link a{
+
+.home2 div .social-link a {
     text-decoration: none;
     color: inherit;
 }
+
 .home2 div .social-link .fa-brands {
     margin: 10px;
     font-size: 20px;
@@ -115,30 +148,37 @@ body {
 
 #about {
     /* border: 2px solid black; */
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 100px;
 }
 
 .about1 {
     padding-left: 10%;
+    width: 50%;
+}
+
+.about2 {
+    width: 50%;
 }
 
 .about2 img {
     width: 350px;
 }
-.right{
+
+.right {
     font-weight: 500;
 }
 
 #services {
     /* border: 2px solid black; */
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 100px;
 }
 
 #services .services1 {
     height: 15%;
     margin: 0px auto;
+    width: 100%;
 }
 
 #services .services1 h1 {
@@ -147,7 +187,8 @@ body {
 
 #services .services1 p {
     margin: 20px auto;
-    font-size: 20px;
+    font-size: 18px;
+    text-align: center;
 }
 
 #services .services2 {
@@ -203,11 +244,11 @@ body {
     height: auto;
     margin: auto;
     flex-wrap: wrap;
+    padding: 25px 30px;
 }
 
 /* Skill progress Bar  */
 .skill-bars {
-    padding: 25px 30px;
     width: 40%;
     /* background: #fff; */
 
@@ -270,12 +311,15 @@ body {
 .bar .progress-line.html span, .bar .progress-line.css span, .bar .progress-line.php span, .bar .progress-line.c span, .bar .progress-line.cpp span, .bar .progress-line.mysql span {
     width: 90%;
 }
+
 .bar .progress-line.dsa span, .bar .progress-line.java span, .bar .progress-line.python span {
     width: 80%;
 }
+
 .bar .progress-line.js span, .bar .progress-line.bootstrap span, .bar .progress-line.laravel span {
     width: 70%;
 }
+
 .bar .progress-line.reactjs span, .bar .progress-line.jquery span {
     width: 50%;
 }
@@ -319,12 +363,15 @@ body {
 .progress-line.html span::after, .progress-line.css span::after, .progress-line.php span::after, .progress-line.c span::after, .progress-line.cpp span::after, .progress-line.mysql span::after {
     content: "90%";
 }
+
 .progress-line.dsa span::after, .progress-line.java span::after, .progress-line.python span::after {
     content: "80%";
 }
+
 .progress-line.js span::after, .progress-line.bootstrap span::after, .progress-line.laravel span::after {
     content: "70%";
 }
+
 .progress-line.reactjs span::after, .progress-line.jquery span::after {
     content: "50%";
 }
@@ -333,51 +380,71 @@ body {
 /* Contact  */
 #contact {
     /* border: 2px solid black; */
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 100px;
 }
-#contact .contact1{
+
+#contact .contact1 {
     height: 15%;
     margin: 0px auto;
-   
+    width: 50%;
+
 }
+
 #contact .contact1 h1 {
     font-size: 35px;
 }
-#contact .contact2{
+
+#contact .contact2 {
     /* border: 2px solid black; */
     height: 100%;
+    width: 50%;
 }
-#contact .contact2 form{
+
+#contact .contact2 form {
     width: 75%;
     margin: 0px auto;
 }
-#contact .contact2 form div{
+
+#contact .contact2 form div {
     margin: 0px;
     padding: 0px;
 }
-#contact .contact2 form div label{
+
+#contact .contact2 form div label {
     margin-top: 10px;
     margin-bottom: -10px;
     font-size: 18px;
 }
 
 
-#contact .contact3{
+#contact .contact3 {
     /* border: 2px solid black; */
     height: 100%;
+    width: 50%;
+}
+
+#contact .contact3 .container{
+    width: 75%;
 }
 
 
-#footer{
+#footer {
     /* border: 2px solid black; */
     height: 40%;
-    
 }
-#footer div .social-link a{
+#footer .footer1{
+    width: 50%;
+}
+#footer .footer1 p{
+    font-size: 18px;
+}
+
+#footer div .social-link a {
     text-decoration: none;
     color: inherit;
 }
+
 #footer div .social-link .fa-brands {
     margin: 5px;
     font-size: 20px;
@@ -389,7 +456,7 @@ body {
     opacity: 0.8;
 }
 
-.scroll-up-btn{
+.scroll-up-btn {
     position: fixed;
     height: 45px;
     width: 42px;
@@ -408,11 +475,34 @@ body {
     pointer-events: none;
     transition: all 0.3s ease;
 }
-.scroll-up-btn.show{
+
+.scroll-up-btn.show {
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;
 }
-.scroll-up-btn:hover{
+
+.scroll-up-btn:hover {
     filter: brightness(90%);
+}
+
+@media only screen and (max-width: 800px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        height: auto;
+        padding-top: 20%;
+        
+    }
+    .home1{
+        width: 100%;
+    }
+
+    .home2{
+        width: 80%;
+        padding-top: 10%;
+    }
+
+
 }

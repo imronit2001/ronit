@@ -1,0 +1,120 @@
+.body{
+    width: 100%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 80px;
+}
+.home{
+    height: auto;
+    flex-direction: column;
+    padding-top: 150px;
+}
+.home1{
+    width: 100%;
+}
+.home2{
+    width: 100%;
+}
+.home2 div{
+    width: 90%;
+}
+.home2 div h1 span{
+    font-size: 30px;
+}
+.home2 div p {
+    font-size: 25px;
+    width: 100%;
+}
+.home2 div .intro{
+    /* border: 2px solid red; */
+    font-size: 18px;
+    width: 100%;
+}
+
+.typing{
+    font-size: 30px;
+}
+
+.home2 div .social-link{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.home2 div .social-link .fa-brands {
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+
+#about{
+    flex-direction: column;
+}
+#about .about1, #about .about2{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.about1{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about1-div2{
+    width: 100%;
+    margin-top: 0;
+}
+
+.about2 img{
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    margin: auto;
+}
+#skills .skills2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skill-bars{
+    width: 90%;
+}
+.contact2-root{
+    /* border: 2px solid black; */
+    flex-direction: column;
+    width: 100%;
+}
+#contact .contact2, #contact .contact3{
+    width: 100%;
+
+}
+#contact .contact3 .container{
+    /* border: 2px solid black; */
+    width: 80%;
+    padding: 20px;
+    margin: 0px auto;
+}
+#footer .footer1{
+    width: 100%;
+}
+#footer .footer1 p{
+    font-size: 15px;
+}
+#footer div .social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#footer div .social-link .fa-brands {
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
