@@ -156,6 +156,17 @@ body {
     padding-left: 10%;
     width: 50%;
 }
+.about1-div2 div{
+    margin: 5px;
+}
+.left{
+    /* border: 2px solid black; */
+    width: 25%;
+}
+.right{
+    /* border: 2px solid red; */
+    width: 75%;
+}
 
 .about2 {
     width: 50%;
@@ -387,7 +398,7 @@ body {
 #contact .contact1 {
     height: 15%;
     margin: 0px auto;
-    width: 50%;
+    width: 100%;
 
 }
 
@@ -485,6 +496,53 @@ body {
 .scroll-up-btn:hover {
     filter: brightness(90%);
 }
+@media only screen and (max-width: 910px){
+
+    .left{
+        /* border: 2px solid black; */
+        width: 100px;
+    }
+    .right{
+        /* border: 2px solid red; */
+        width: 210px;
+    }
+    .skill-bars{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 824px){
+
+    .left{
+        /* border: 2px solid black; */
+        font-size: 15px;
+    }
+    .right{
+        /* border: 2px solid red; */
+        font-size: 15px;
+    }
+    #about{
+        flex-direction: column;
+    }
+    #about .about1, #about .about2{
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+    .about1-div2{
+        width: 100%;
+        margin-top: 0;
+    }
+    .contact2-root{
+        /* border: 2px solid black; */
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #contact .contact2, #contact .contact3{
+        width: 100%;
+    
+    }
+}
 
 @media only screen and (max-width: 800px) {
     .home{
@@ -504,5 +562,7 @@ body {
         padding-top: 10%;
     }
 
+    
+    
 
 }
