@@ -69,11 +69,15 @@
     margin-top: 0;
 }
 
+
 .about2 img{
     margin: 0;
     padding: 0;
     width: 300px;
     margin: auto;
+}
+#services .services1 p{
+    font-size: 15px;
 }
 #skills .skills2{
     width: 100%;
@@ -90,6 +94,7 @@
     flex-direction: column;
     width: 100%;
 }
+
 #contact .contact2, #contact .contact3{
     width: 100%;
 
@@ -100,6 +105,7 @@
     padding: 20px;
     margin: 0px auto;
 }
+
 #footer .footer1{
     width: 100%;
 }
@@ -117,4 +123,51 @@
     margin: 5px;
     font-size: 20px;
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    section{
+        /* background: red; */
+    }
+    .home2 div{
+        width: 100%;
+    }
+
+    #about .about1, #about .about2{
+        /* border: 2px solid black; */
+        width: 100%;
+    }
+
+    .about1-div2 div{
+        margin: 2px 0px 2px 2px;
+    }
+
+    #services .services1 p{
+        font-size: 15px;
+        margin: auto 8px;
+    }
+
+    #contact .contact3 .container{
+        /* border: 2px solid black; */
+        width: 100%;
+        padding: 20px;
+        margin: 0px auto;
+    }
+    #contact .contact3 .container p{
+        text-align: justify;
+    }
+    #contact .contact3 .container div{
+        /* border: 2px solid red; */
+        /* width: 100%; */
+    }
+    .left{
+        /* border: 2px solid black; */
+        font-size: 15px;
+    }
+    .right{
+        /* border: 2px solid red; */
+        font-size: 15px;
+    }
 }
