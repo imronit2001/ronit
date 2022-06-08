@@ -65,6 +65,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+    #home{
+        padding-top: 40px;
+    }
     
     #home .home1 img {
         margin: 15% 0px auto 0px;
