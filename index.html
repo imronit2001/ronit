@@ -39,6 +39,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
 </head>
 
@@ -47,25 +48,44 @@
     <!-- ======================================== 
           Go to Top
     ========================================  -->
-    
+
 
     <!-- ======================================== 
           Navbar
     ========================================  -->
- 
+    <nav class="bg-light  text-dark">
+        <div class="logo text-dark blockquote m-0">RONIT SINGH</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a onclick="window.location.replace('index.html#home');" style="cursor: pointer;">Home</a></li>
+            <li><a onclick="window.location.replace('index.html#about');" style="cursor: pointer;">About</a></li>
+            <li><a onclick="window.location.replace('index.html#service');" style="cursor: pointer;">Services</a></li>
+            <li><a onclick="window.location.replace('index.html#skill');" style="cursor: pointer;">Skills</a></li>
+            <li><a onclick="window.location.replace('index.html#contact');" style="cursor: pointer;">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- ======================================== 
           MAIN SECTION
     ========================================  -->
     <section id="home" class="home">
         <div class="home1">
-            <img src="image/image_01.svg" alt="">
+            <img src="image/image_01.svg" alt="" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50"
+                data-aos-duration="1000">
         </div>
         <div class="home2">
-            <p class="hello">Hello ,</p>
-            <h1 class="blockquote">I am Ronit Singh</h1>
-            <p class="intro">Web Developer and Competitive Coder</p>
-            <div class="social-link">
+            <p class="hello" data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50"
+                data-aos-duration="1000">Hello ,</p>
+            <h1 class="blockquote" data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="50"
+                data-aos-duration="1000">I am <span
+                class="typing" style="color:#000046; "></span></h1>
+            <p class="intro" data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                Web Developer and Competitive Coder</p>
+            <div class="social-link" data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50"
+                data-aos-duration="1000">
                 <a href="https://en-gb.facebook.com/ronitsinghrajput.11/" target="_blank"><i
                         class="fa-brands fa-facebook"></i></a>
                 <a href="https://twitter.com/imronit1703" target="_blank"><i class="fa-brands fa-twitter"></i></a>
@@ -78,8 +98,11 @@
                 <a href="https://telegram.me/imRonit" target="_blank"><i class="fa-brands fa-telegram"></i></a>
                 <a href="mailto:ronitsingh7003@gmail.com" target="_blank"><i class="fa-brands fa-google"></i></a>
             </div>
-            <button class="btn btn-primary m-3" onclick="window.location.replace('index.html#contact');">Get in
-                Touch &#8594;</button>
+            <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+
+                <button class="btn btn-primary m-3" onclick="window.location.replace('index.html#contact');">Get in
+                    Touch &#8594;</button>
+            </div>
         </div>
     </section>
     <!-- ======================================== 
@@ -87,7 +110,8 @@
     ========================================  -->
     <section id="about" class="about">
         <div class="about1">
-            <div class="about1-div1">
+            <div class="about1-div1" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                data-aos-duration="1000">
                 <h1 class="blockquote">Hello! I am Ronit Singh.</h1>
                 <p>I am a full-stack developer with more than 4 years of experience. I am a skilled front-end developer
                     and
@@ -98,7 +122,7 @@
                     I can easily capitalize on low hanging fruits and quickly maximize timely deliverables for real-time
                     schemas.</p>
             </div>
-            <div class="about1-div2">
+            <div class="about1-div2" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
                 <div class="d-flex">
                     <div class="left">Email Id : </div>
                     <div class="right ">ronitsingh7003@gmail.com</div>
@@ -118,27 +142,27 @@
             </div>
         </div>
         <div class="about2">
-            <img src="ronit/image_01.jpg" alt="">
+            <img src="ronit/image_01.jpg" alt="" data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
         </div>
     </section>
     <!-- ======================================== 
           SERVICES SECTION
     ========================================  -->
-    <section id="service" class="service mt-3">
+    <section id="service" class="service mt-3" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
         <h1 class="blockquote text-center mt-2">My Services</h1>
         <p class="text-center p-3">I offer services fit for any website or app. I can quickly maximize timely
             deliverables
             for real-time schemas. </p>
         <div class="service1 mt-2">
-            <div class="service1-div">
+            <div class="service1-div" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
                 <img src="image/web-design.svg" alt="">
                 <h2>Web Design</h2>
             </div>
-            <div class="service1-div">
+            <div class="service1-div" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
                 <img src="image/ui-design.svg" alt="">
                 <h2>UI - UX Design</h2>
             </div>
-            <div class="service1-div">
+            <div class="service1-div" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
                 <img src="image/coding.svg" alt="">
                 <h2>Coding</h2>
             </div>
@@ -147,16 +171,17 @@
     <!-- ======================================== 
           SKILL SECTION
     ========================================  -->
-    <section id="skill" class="skill">
+    <section id="skill" class="skill" data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
         <h1 class="blockquote text-center mt-2">My Skills</h1>
         <p class="text-center p-3">I am a quick learner and specialize in multitude of skills required for Web
             Application
             Development and Product Design</p>
         <div class="skill1 mt-2">
 
-            <div class="skill-bars" data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50"
+            <div class="skill-bars" data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="50"
                 data-aos-duration="1000">
-                <div class="bar" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                  <div class="progress-line js">
+                   <div class="bar" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                     data-aos-duration="1000">
                     <div class="info">
                         <span>HTML</span>
@@ -165,7 +190,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                <div class="bar" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                     data-aos-duration="1000">
                     <div class="info">
                         <span>CSS</span>
@@ -174,16 +199,15 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                <div class="bar" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                     data-aos-duration="1000">
                     <div class="info">
                         <span>Javascript</span>
                     </div>
-                    <div class="progress-line js">
-                        <span></span>
+                       <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                <div class="bar" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                     data-aos-duration="1000">
                     <div class="info">
                         <span>Bootstrap</span>
@@ -192,7 +216,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                <div class="bar" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                     data-aos-duration="1000">
                     <div class="info">
                         <span>PHP</span>
@@ -201,7 +225,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                <div class="bar" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                     data-aos-duration="1000">
                     <div class="info">
                         <span>Laravel</span>
@@ -210,7 +234,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                <div class="bar" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                     data-aos-duration="1000">
                     <div class="info">
                         <span>MySQL</span>
@@ -220,9 +244,9 @@
                     </div>
                 </div>
             </div>
-            <div class="skill-bars" data-aos="zoom-in-left" data-aos-offset="200" data-aos-delay="50"
+            <div class="skill-bars" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50"
                 data-aos-duration="1000">
-                <div class="bar" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                <div class="bar" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                     data-aos-duration="1000">
                     <div class="info">
                         <span>C Language</span>
@@ -231,7 +255,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                <div class="bar" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                     data-aos-duration="1000">
                     <div class="info">
                         <span>C++ </span>
@@ -240,7 +264,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                <div class="bar" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                     data-aos-duration="1000">
                     <div class="info">
                         <span>Data Structure and Algorithm</span>
@@ -249,7 +273,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                <div class="bar" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                     data-aos-duration="1000">
                     <div class="info">
                         <span>Java</span>
@@ -258,7 +282,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                <div class="bar" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                     data-aos-duration="1000">
                     <div class="info">
                         <span>Python</span>
@@ -267,7 +291,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                <div class="bar" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                     data-aos-duration="1000">
                     <div class="info">
                         <span>React JS</span>
@@ -276,7 +300,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                <div class="bar" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
                     data-aos-duration="1000">
                     <div class="info">
                         <span>Jquery</span>
@@ -291,9 +315,9 @@
     <!-- ======================================== 
           CONTACT SECTION
     ========================================  -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
         <h1 class="blockquote text-center">Contact Me</h1>
-        <div class="contact-container">
+        <div class="contact-container" data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
             <form class="contact-form">
                 <div class="form-group">
                     <label class="blockquote">Name</label>
@@ -315,7 +339,7 @@
                     <button id="formSubmit" class="btn btn-primary m-3 w-25">Send</button>
                 </div>
             </form>
-            <div class="contact-message">
+            <div class="contact-message" data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
                 <h1 class="blockquote text-center">How can I help you !</h1>
                 <p>If you like my work and want to avail my services then drop me a message using the contact form.</p>
                 <p>Or get in touch using my email or my contact number.</p>
