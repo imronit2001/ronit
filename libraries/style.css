@@ -115,16 +115,28 @@ section {
 }
 
 #about .about2 {
+    /* border: 2px solid black; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 50%;
     padding: 20px;
 }
-
-#about .about2 img {
+#about .about2 .about2-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#about .about2 .about2-div img {
+    /* border: 2px solid black; */
     margin: auto;
     width: 300px;
+}
+#about .about2 .about2-div h1{
+    /* border: 2px solid black; */
+    /* margin: 0; */
+    width: auto;
+    font-size: 18px;
 }
 
 /*===================
@@ -297,7 +309,7 @@ section {
 /*===================
     Achievement CSS  
 ===================*/
-#achievement{
+#achievement , #project{
     width: 100%;
     padding: 5%;
 }
