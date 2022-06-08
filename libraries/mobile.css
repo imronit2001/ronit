@@ -1,173 +1,121 @@
-.body{
-    width: 100%;
-    box-sizing: border-box;
-}
-.navbar{
-    height: 80px;
-}
-.home{
+#home {
+    flex-direction: column;
     height: auto;
-    flex-direction: column;
-    padding-top: 150px;
 }
-.home1{
-    width: 100%;
-}
-.home2{
-    width: 100%;
-}
-.home2 div{
-    width: 90%;
-}
-.home2 div h1 span{
-    font-size: 30px;
-}
-.home2 div p {
-    font-size: 25px;
-    width: 100%;
-}
-.home2 div .intro{
-    /* border: 2px solid red; */
-    font-size: 18px;
+
+#home .home1 {
     width: 100%;
 }
 
-.typing{
-    font-size: 30px;
+#home .home1 img {
+    width: 50%;
+    margin: 10% 0px auto 0px;
 }
 
-.home2 div .social-link{
+#home .home2 {
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
-.home2 div .social-link .fa-brands {
-    margin: 5px;
-    font-size: 1rem;
-    cursor: pointer;
+#about .about1 .about1-div2 {
+    padding: 20px 0px 20px 10%;
 }
 
-
-
-#about{
+.left {
+    width: 100px;
+}
+.contact-container{
     flex-direction: column;
 }
-#about .about1, #about .about2{
-    width: 90%;
-    margin: auto;
-    padding: 20px;
-}
-.about1{
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.about1-div2{
+.contact-container .contact-form{
     width: 100%;
-    margin-top: 0;
+    padding: 2% 10%;
 }
-
-
-.about2 img{
-    margin: 0;
-    padding: 0;
-    width: 300px;
-    margin: auto;
-}
-#services .services1 p{
-    font-size: 15px;
-}
-#skills .skills2{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.skill-bars{
-    width: 90%;
-}
-.contact2-root{
-    /* border: 2px solid black; */
-    flex-direction: column;
+.contact-container .contact-form .form-group{
     width: 100%;
 }
-
-#contact .contact2, #contact .contact3{
+.contact-container .contact-message{
     width: 100%;
-
-}
-#contact .contact3 .container{
-    /* border: 2px solid black; */
-    width: 80%;
-    padding: 20px;
-    margin: 0px auto;
+    padding: 10%;
 }
 
-#footer .footer1{
-    width: 100%;
-}
-#footer .footer1 p{
-    font-size: 15px;
-}
-#footer div .social-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-}
-#footer div .social-link .fa-brands {
-    margin: 5px;
-    font-size: 20px;
-    cursor: pointer;
+@media only screen and (max-width: 700px) {
+    #home .home1 img {
+        margin: 18% 0px auto 0px;
+        width: 60%;
+    }
+
+    #about {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about .about1, #about .about2 {
+        width: 100%;
+    }
+
+    .skill1 {
+        flex-direction: column;
+    }
+
+    .skill-bars {
+        width: 80%;
+    }
 }
 
+@media only screen and (max-width: 500px) {
+    #home .home1 img {
+        margin: 15% 0px auto 0px;
+        width: 70%;
+    }
+
+    #home .home2 h1 {
+        font-size: 35px;
+    }
+
+    #home .home2 .intro {
+        font-size: 18px;
+    }
+
+    #home .home2 .social-link a .fa-brands {
+        margin: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .skill-bars {
+        width: 90%;
+    }
+}
 
 @media only screen and (max-width: 400px) {
-
-    section{
-        /* background: red; */
-    }
-    .home2 div{
-        width: 100%;
+    #home .home1 img {
+        width: 80%;
+        margin: 15% 0px auto 0px;
     }
 
-    #about .about1, #about .about2{
-        /* border: 2px solid black; */
-        width: 100%;
+    #home .home2 h1 {
+        font-size: 30px;
     }
 
-    .about1-div2 div{
-        margin: 2px 0px 2px 2px;
-    }
-
-    #services .services1 p{
-        font-size: 15px;
-        margin: auto 8px;
-    }
-
-    #contact .contact3 .container{
-        /* border: 2px solid black; */
-        width: 100%;
-        padding: 20px;
-        margin: 0px auto;
-    }
-    #contact .contact3 .container p{
-        text-align: justify;
-    }
-    #contact .contact3 .container div{
-        /* border: 2px solid red; */
-        /* width: 100%; */
-    }
-    .left{
-        /* border: 2px solid black; */
+    #home .home2 .intro {
         font-size: 15px;
     }
-    .right{
-        /* border: 2px solid red; */
-        font-size: 15px;
+
+    #about .about1 .about1-div2 {
+        padding: 20px 0px 20px 10px;
+        margin: auto;
+    }
+
+    #about .about2 img {
+        width: 250px;
+    }
+    .contact-container .contact-message{
+        width: 100%;
+        padding: 5px;
+    }
+    #footer p{
+        font-size: 16px;
     }
 }
