@@ -32,7 +32,6 @@
     <!-- Mobile View CSS  -->
     <link type="text/css" media="(max-width: 500px)" rel="stylesheet" href="libraries/mobile.css" />
 
-
     <!-- onscroll animate  -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -45,11 +44,11 @@
 
 <body>
 
-    <div class="scroll-up-btn">
+    <!-- <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
-    </div>
+    </div> -->
 
-    <div class="navbar">
+    <!-- <div class="navbar">
         <a class="logo">Ronit Singh</a>
         <ul>
             <li><a onclick="window.location.replace('index.html#home');" style="cursor: pointer;">Home</a></li>
@@ -58,17 +57,36 @@
             <li><a onclick="window.location.replace('index.html#skills');" style="cursor: pointer;">Skills</a></li>
             <li><a onclick="window.location.replace('index.html#contact');" style="cursor: pointer;">Contact</a></li>
         </ul>
-    </div>
-    <section class="home w-100 d-flex justify-content-center align-items-center" id="home">
-        <div class="home1 d-flex justify-content-center align-items-center" >
-            <img src="image/image_01.svg" alt="" class="m-auto" >
+    </div> -->
+
+    <!-- <header class="header">
+        <a class="logo">Ronit Singh</a>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a class="navbar-link" onclick="window.location.replace('index.html#home');"
+                        style="cursor: pointer;">Home</a></li>
+                <li><a class="navbar-link" onclick="window.location.replace('index.html#about');"
+                        style="cursor: pointer;">About</a></li>
+                <li><a class="navbar-link" onclick="window.location.replace('index.html#services');"
+                        style="cursor: pointer;">Services</a></li>
+                <li><a class="navbar-link" onclick="window.location.replace('index.html#skills');"
+                        style="cursor: pointer;">Skills</a></li>
+                <li><a class="navbar-link" onclick="window.location.replace('index.html#contact');"
+                        style="cursor: pointer;">Contact</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+
+    <section class="home w-100 m-0 d-flex justify-content-center align-items-center" id="home">
+        <div class="home1 d-flex justify-content-center align-items-center">
+            <img src="image/image_01.svg" alt="" class="m-auto">
         </div>
-        <div class="home2 d-flex justify-content-center align-items-center " >
+        <div class="home2 d-flex justify-content-center align-items-center ">
             <div class="p-2">
                 <p class="" style="font-family: 'Great Vibes', cursive; ">Hello ,</p>
-                <h1 class="blockquote"><span class="blockquote"
-                        style=" font-family: 'Great Vibes', cursive;">I'm <span class="typing"
-                            style="color:#000046; "></span></span></h1>
+                <h1 class="blockquote"><span class="blockquote" style=" font-family: 'Great Vibes', cursive;">I'm <span
+                            class="typing" style="color:#000046; "></span></span></h1>
                 <p class="blockquote-footer intro">Web Developer and Competitive Coder</p>
                 <div class="social-link p-2 m-2">
                     <a href="https://en-gb.facebook.com/ronitsinghrajput.11/" target="_blank"><i
@@ -89,7 +107,7 @@
         </div>
     </section>
 
-    <section class="w-100 d-flex bg-light" id="about">
+    <section class="w-100 m-0 d-flex bg-light" id="about">
         <div class="about1 d-flex  flex-column  h-100">
             <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
 
@@ -103,7 +121,8 @@
                     I can easily capitalize on low hanging fruits and quickly maximize timely deliverables for real-time
                     schemas.</p>
             </div>
-            <div class="mt-5 about1-div2" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+            <div class="mt-5 about1-div2" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                data-aos-duration="1000">
                 <div class="d-flex">
                     <div class="left">Email Id : </div>
                     <div class="right ">ronitsingh7003@gmail.com</div>
@@ -128,10 +147,13 @@
         </div>
     </section>
 
-    <section id="services" class="w-100 d-flex flex-column" data-aos="zoom-in">
+    <section id="services" class="w-100 m-0 d-flex flex-column" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50"
+        data-aos-duration="1000">
         <div class="services1 d-flex flex-column justify-content-center">
-            <h1 class="blockquote m-auto" data-aos="zoom-in">My Services</h1>
-            <p class="" data-aos="fade-up">I offer services fit for any website or app. I can quickly maximize timely deliverables for
+            <h1 class="blockquote m-auto" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50"
+                data-aos-duration="1000">My Services</h1>
+            <p class="" data-aos="fade-up">I offer services fit for any website or app. I can quickly maximize timely
+                deliverables for
                 real-time schemas.</p>
         </div>
         <div class="services2 w-auto  d-flex justify-content-center align-items-center p-auto">
@@ -153,7 +175,7 @@
         </div>
     </section>
 
-    <section id="skills" class="w-100 d-flex flex-column bg-light" data-aos-offset="200" data-aos-delay="0"
+    <section id="skills" class="w-100 m-0 d-flex flex-column bg-light" data-aos-offset="200" data-aos-delay="0"
         data-aos-duration="1000" data-aos-easing="ease-in" data-aos-mirror="true" data-aos-once="false"
         data-aos-anchor-placement="top-center">
         <div class="skills1 d-flex flex-column justify-content-center" data-aos="zoom-in">
@@ -161,11 +183,11 @@
             <!-- <p class="">I am a quick learner and specialize in multitude of skills required for Web Application
                 Development and Product Design</p> -->
         </div>
-        <div class="skills2 d-flex justify-content-center align-items-center p-auto" >
-            <div class="skill-bars" data-aos="zoom-in-right"
-            data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
-                <div class="bar" data-aos="fade-right"
-                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+        <div class="skills2 d-flex justify-content-center align-items-center p-auto">
+            <div class="skill-bars" data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50"
+                data-aos-duration="1000">
+                <div class="bar" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
                     <div class="info">
                         <span>HTML</span>
                     </div>
@@ -173,8 +195,8 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-right"
-                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                <div class="bar" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
                     <div class="info">
                         <span>CSS</span>
                     </div>
@@ -182,8 +204,8 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-right"
-                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                <div class="bar" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
                     <div class="info">
                         <span>Javascript</span>
                     </div>
@@ -191,8 +213,8 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-right"
-                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                <div class="bar" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
                     <div class="info">
                         <span>Bootstrap</span>
                     </div>
@@ -200,8 +222,8 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-right"
-                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                <div class="bar" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
                     <div class="info">
                         <span>PHP</span>
                     </div>
@@ -209,8 +231,8 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-right"
-                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                <div class="bar" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
                     <div class="info">
                         <span>Laravel</span>
                     </div>
@@ -218,8 +240,8 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-right"
-                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                <div class="bar" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
                     <div class="info">
                         <span>MySQL</span>
                     </div>
@@ -228,10 +250,10 @@
                     </div>
                 </div>
             </div>
-            <div class="skill-bars" data-aos="zoom-in-left"
-            data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
-                <div class="bar" data-aos="fade-left"
-                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+            <div class="skill-bars" data-aos="zoom-in-left" data-aos-offset="200" data-aos-delay="50"
+                data-aos-duration="1000">
+                <div class="bar" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
                     <div class="info">
                         <span>C Language</span>
                     </div>
@@ -239,8 +261,8 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-left"
-                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                <div class="bar" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
                     <div class="info">
                         <span>C++ </span>
                     </div>
@@ -248,8 +270,8 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-left"
-                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                <div class="bar" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
                     <div class="info">
                         <span>Data Structure and Algorithm</span>
                     </div>
@@ -257,8 +279,8 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-left"
-                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                <div class="bar" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
                     <div class="info">
                         <span>Java</span>
                     </div>
@@ -266,8 +288,8 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-left"
-                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                <div class="bar" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
                     <div class="info">
                         <span>Python</span>
                     </div>
@@ -275,8 +297,8 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-left"
-                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                <div class="bar" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
                     <div class="info">
                         <span>React JS</span>
                     </div>
@@ -284,8 +306,8 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar" data-aos="fade-left"
-                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+                <div class="bar" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000">
                     <div class="info">
                         <span>Jquery</span>
                     </div>
@@ -297,7 +319,7 @@
         </div>
     </section>
 
-    <section id="contact" class="w-100 d-flex flex-column">
+    <section id="contact" class="w-100 m-0 d-flex flex-column">
         <div class="contact1 d-flex flex-column justify-content-center">
             <h1 class="blockquote m-auto">Contact Me</h1>
         </div>
@@ -363,7 +385,7 @@
         </div>
     </section>
 
-    <section id="footer" class="bg-light d-flex justify-content-center align-items-center">
+    <section id="footer" class="w-100 m-0 bg-light d-flex justify-content-center align-items-center">
         <div class="footer1 p-2 m-auto d-flex justify-content-center align-items-center flex-column">
             <h1 class="blockquote text-center">Ronit Singh</h1>
             <p class="blockquote text-center">Web Developer and Competitive Coder</p>
@@ -388,7 +410,8 @@
 
 
 
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

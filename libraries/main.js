@@ -36,3 +36,14 @@ $('.navbar ul li a').click(function () {
 document.getElementById("formSubmit").addEventListener("click", function (event) {
     event.preventDefault()
 });
+
+
+const mobile_nav = document.querySelector(".mobile-navbar-btn");
+const nav_header = document.querySelector(".header");
+
+const toggleNavbar = () => {
+  // alert("Plz Subscribe ");
+  nav_header.classList.toggle("active");
+};
+
+mobile_nav.addEventListener("click", () => toggleNavbar());
