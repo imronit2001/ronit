@@ -1,7 +1,3 @@
-window.addEventListener('scroll', function () {
-    var header = this.document.querySelector('.navbar');
-    header.classList.toggle('bg-light', window.scrollY >= 0.1);
-});
 
 // typing text animation script
 var typed = new Typed(".typing", {
