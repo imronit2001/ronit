@@ -238,19 +238,39 @@ section {
     animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
-.bar .progress-line.html span, .bar .progress-line.css span, .bar .progress-line.php span, .bar .progress-line.c span, .bar .progress-line.cpp span, .bar .progress-line.mysql span {
+.bar .progress-line.html span,
+.bar .progress-line.css span,
+.bar .progress-line.php span,
+.bar .progress-line.c span,
+.bar .progress-line.cpp span,
+.bar .progress-line.java span,
+.bar .progress-line.python span,
+.bar .progress-line.mysql span,
+.bar .progress-line.js span,
+.bar .progress-line.github span,
+.bar .progress-line.laravel span,
+
+.bar .progress-line.bootstrap span {
     width: 90%;
 }
 
-.bar .progress-line.dsa span, .bar .progress-line.java span, .bar .progress-line.python span, .bar .progress-line.reactjs span, .bar .progress-line.js span, .bar .progress-line.bootstrap span {
+.bar .progress-line.dsa span,
+
+
+.bar .progress-line.reactjs span {
     width: 80%;
 }
 
-.bar .progress-line.laravel span {
+/* .bar .progress-line.laravel span {
     width: 70%;
-}
+} */
 
-.bar .progress-line.jquery span, .bar .progress-line.mongodb span, .bar .progress-line.expressjs span {
+.bar .progress-line.jquery span,
+.bar .progress-line.mongodb span,
+.bar .progress-line.firebase span,
+.bar .progress-line.django span,
+.bar .progress-line.nodejs span,
+.bar .progress-line.expressjs span {
     width: 50%;
 }
 
@@ -290,19 +310,35 @@ section {
     }
 }
 
-.progress-line.html span::after, .progress-line.css span::after, .progress-line.php span::after, .progress-line.c span::after, .progress-line.cpp span::after, .progress-line.mysql span::after {
+.progress-line.html span::after,
+.progress-line.css span::after,
+.progress-line.php span::after,
+.progress-line.c span::after,
+.progress-line.cpp span::after,
+.progress-line.java span::after,
+.progress-line.python span::after,
+.progress-line.github span::after,
+.progress-line.js span::after,
+.progress-line.mysql span::after,
+.progress-line.bootstrap span::after {
     content: "90%";
 }
 
-.progress-line.dsa span::after, .progress-line.java span::after, .progress-line.python span::after, .progress-line.reactjs span::after, .progress-line.js span::after, .progress-line.bootstrap span::after {
+.progress-line.dsa span::after,
+.progress-line.reactjs span::after {
     content: "80%";
 }
 
 .progress-line.laravel span::after {
-    content: "70%";
+    content: "90%";
 }
 
-.progress-line.jquery span::after, .progress-line.mongodb span::after, .progress-line.expressjs span::after {
+.progress-line.jquery span::after,
+.progress-line.mongodb span::after,
+.progress-line.firebase span::after,
+.progress-line.django span::after,
+.progress-line.nodejs span::after,
+.progress-line.expressjs span::after {
     content: "50%";
 }
 
@@ -318,7 +354,8 @@ section {
 /*===================
     Achievement CSS  
 ===================*/
-#achievement, #project {
+#achievement,
+#project {
     width: 100%;
     padding: 5%;
 }
@@ -391,7 +428,11 @@ section {
 /*===================
     Go To Top CSS  
 ===================*/
-#home, #about, #service, #skill, #contact {
+#home,
+#about,
+#service,
+#skill,
+#contact {
     padding-top: 100px;
 }
 
@@ -542,6 +583,24 @@ input[type="checkbox"] {
     }
 }
 
-#about, #service, #skill, #achievement, #project, #contact {
+#about,
+#service,
+#skill,
+#achievement,
+#project,
+#contact {
     margin-top: 90px;
+}
+
+/*==================================================
+ * Effect 1
+ * ===============================================*/
+.effect1 {
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
 }
