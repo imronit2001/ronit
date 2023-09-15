@@ -1,76 +1,70 @@
-<div align="center">
-<img src="assets/ronit.png" align="center" />
-</div>  
-  
-<br/>
+# Getting Started with Create React App
 
-### <div align="center">I'm Ronit, a Full Stack Web Developer</div>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- 🔭 I’m currently working as an intern at [Mitra Fintech](https://github.com/mitra-Fintech)
+## Available Scripts
 
-- 🌱 I’m currently learning Django
+In the project directory, you can run:
 
-<br/>
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## My Skill Set
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-<table><tr><td valign="top" width="33%">
+### `npm test`
 
-<h3> Frontend </h3>
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-<div align="center">  
-<img style="margin: 10px" src="assets/html5.png" alt="HTML5" height="50" />  
-<img style="margin: 10px" src="assets/css3.png" alt="CSS3" height="50" />  
-<img style="margin: 10px" src="assets/js.png" alt="JavaScript" height="50" />
-<img style="margin: 10px" src="assets/bootstrap.png" alt="Bootstrap" height="50" />  
-<img style="margin: 10px" src="assets/react.png" alt="React" height="50" />  
-<img style="margin: 10px" src="assets/python.png" alt="Python" height="50" />
-</div>
+### `npm run build`
 
-</div></td><td valign="top" width="33%">
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-<h3> Backend </h3>
-<div align="center">  
-<img style="margin: 10px" src="assets/php.svg" alt="PHP" height="50" />  
-<img style="margin: 10px" src="assets/mysql.png" alt="MYSQL" height="50" />  
-<img style="margin: 10px" src="assets/js.png" alt="JavaScript" height="50" />  
-<img style="margin: 10px" src="assets/mongodb.png" alt="MongoDB" height="50" />  
-<img style="margin: 10px" src="assets/nodejs.png" alt="Node.js" height="50" />  
-<img style="margin: 10px" src="assets/firebase.png" alt="Express.js" height="50" />  
-<img style="margin: 10px" src="assets/python.png" alt="Python" height="50" />  
-</div> 
-</div></td><td valign="top" width="33%">
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-<h3> Programming Languages </h3>
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-<div align="center">  
-<img style="margin: 10px" src="assets/c.png" alt="C" height="50" />  
-<img style="margin: 10px" src="assets/cpp.png" alt="C++" height="50" />  
-<img style="margin: 10px" src="assets/java.png" alt="Java" height="50" />  
-<img style="margin: 10px" src="assets/python.png" alt="Python" height="50" />
-<img style="margin: 10px" src="assets/dsa.png" alt="DSA" height="50" />
-</div></td></tr></table>
+### `npm run eject`
 
-<br/>
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Connect with me
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-<div align="center">
-<a href="https://github.com/imronit2001" target="_blank">
-<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
-</a>
-<a href="https://twitter.com/imronit1703" target="_blank">
-<img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 5px;" />
-</a>
-<a href="https://www.linkedin.com/in/imronit/" target="_blank">
-<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
-</a>
-<a href="https://instagram.com/ronitsinghrajput7" target="_blank">
-<img src=https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white alt=instagram style="margin-bottom: 5px;" />
-</a>  
-</div>  
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Learn More
 
-<br/>
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
