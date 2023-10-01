@@ -8,7 +8,7 @@
 
 - 🔭 I’m currently working as an intern at [Mitra Fintech](https://github.com/mitra-Fintech)
 
-- 🌱 I’m currently learning Django
+- 🌱 I’m currently learning MERN STACK
 
 <br/>
 

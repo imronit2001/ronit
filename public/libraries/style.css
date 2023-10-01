@@ -76,7 +76,7 @@ section {
 }
 
 #home .home2 button {
-    width: 150px;
+    width: 200px;
 }
 
 /*===================
@@ -544,4 +544,12 @@ input[type="checkbox"] {
 
 #about, #service, #skill, #achievement, #project, #contact {
     margin-top: 90px;
+}
+
+/*===================
+    Project CSS
+===================*/
+
+.hoverWhite:hover{
+    color: white !important;
 }
