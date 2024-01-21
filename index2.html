@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronit Singh</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="ronit/ronit_profile.jpg">
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="libraries/bootstrap.min.css">
+    <script src="libraries/bootstrap.min.js"></script>
+    <script src="libraries/bootstrap.bundle.js"></script>
+    <script src="libraries/bootstrap.bundle.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="libraries/style2.css">
+    <link rel="stylesheet" href="libraries/animate.css">
+
+    <!-- Mobile View CSS  -->
+    <link type="text/css" media="(max-width: 900px)" rel="stylesheet" href="libraries/mobile2.css" />
+
+    <!-- onscroll animate  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Typing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <script src="https://unpkg.com/css-doodle@0.15.3/css-doodle.min.js"></script>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            background: #270F34;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            contain: content;
+            overflow: hidden;
+            z-index: 9999999;
+        }
+        #loader{
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ======================================== 
+          Go to Top
+    ========================================  -->
+    <div>
+        <css-doodle id="loader" use="var(--rule)"></css-doodle>
+    </div>
+
+    <!-- ======================================== 
+          Navbar
+    ========================================  -->
+
+    <nav class="d-flex">
+        <div class="logo">
+            <h4>Ronit Singh</h4>
+        </div>
+        <div class="nav-links">
+            <ul class="d-flex">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="index.php#about">About</a></li>
+                <li><a href="index.php#skills">Skills</a></li>
+                <li><a href="index.php#projects">Projects</a></li>
+                <li><a href="index.php#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="burger">
+            <div class="line1"><i class="fa-solid fa-bars"></i></div>
+            <div class="line2"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+    </nav>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Custom JS -->
+    <!-- <script src="libraries/main.js2"></script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.parentElement.removeChild(loader);
+                const htmlElement = document.documentElement; // <html>
+                const bodyElement = document.body; // <body>
+                bodyElement.style.background = 'none';
+                bodyElement.style.overflow = 'auto';
+                bodyElement.style.display = 'block';
+                bodyElement.style.alignItems = '';
+                bodyElement.style.justifyContent = '';
+                bodyElement.style.contain = '';
+                bodyElement.style.overflow = '';
+                bodyElement.style.zIndex = '';
+
+                document.getElementsByTagName('nav')[0].style.opacity = 1;
+
+            }, 10000);
+        });
+
+    </script>
+
+</body>
+
+</html>
