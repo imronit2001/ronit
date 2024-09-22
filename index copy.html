@@ -14,7 +14,6 @@
 
     <!--Custom Style  -->
     <link rel="stylesheet" type="text/css" href="/portfolio-page/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="/portfolio-page/css/particles.css" />
 
     <!-- Favicon Meta Tags -->
     <link rel="shortcut icon" href="/portfolio-page/img/favicon.ico">
@@ -82,46 +81,59 @@
 
     <main>
         <section id="home">
-            <div class="particles purple"></div>
-            <div class="particles medium-blue"></div>
-            <div class="particles light-blue"></div>
-            <div class="particles red"></div>
-            <div class="particles orange"></div>
-            <div class="particles yellow"></div>
-            <div class="particles cyan"></div>
-            <div class="particles light-green"></div>
-            <div class="particles lime"></div>
-            <div class="particles magenta"></div>
-            <div class="particles lightish-red"></div>
-            <div class="particles pink"></div>
-
-            <div class="h-100 home-main-container">
-                <div class="left-panel">
-                    <div class="mx-4">
-                        <h4>Hello,</h4>
-                        <h2 id="ronitsingh">I'm Ronit Singh</h2>
-                    </div>
-                    <h3 class="mx-4 mt-3">Crafting User-Friendly & High-Performance Web Solutions</h3>
-                </div>
-                <div class="right-panel">
-                    <div class="img-box">
-                        <img src="/portfolio-page/img/profile-pic.png" alt="profile-pic" srcset="">
-                    </div>
-                </div>
-            </div>
-
 
         </section>
-        <section id="about">
-            <h2 class="section-title">About Me</h2>
 
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Brief introduction about yourself and your experience.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <h3>Project Title 1</h3>
+                <p>Description of project 1.</p>
+            </article>
+            <article>
+                <h3>Project Title 2</h3>
+                <p>Description of project 2.</p>
+            </article>
+            <!-- Add more projects as needed -->
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="your_form_handler" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
-    <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Typing Library -->
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="/portfolio-page/js/app.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
