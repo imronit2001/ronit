@@ -240,7 +240,7 @@ section>.section-title:before {
     border-bottom: 1px solid #c50000;
     border-top: 1px solid #c50000;
     height: 5px;
-    background-color: #f8f8f8;
+    background-color: transparent;
 }
 
 /* ABOUT ME SECTION CSS Starts Here */
@@ -317,6 +317,71 @@ section>.section-title:before {
 
 /* ABOUT ME SECTION CSS Ends Here */
 
+/* SKILLS SECTION CSS Starts Here */
+#skills {
+    background-color: #2b2c2f;
+    color: white;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.skills-container .card {
+    width: 300px;
+    /* height: 300px; */
+    margin: 20px;
+    border-radius: 0px !important;
+    box-shadow: none;
+    -webkit-box-shadow: 1 10px 6px -6px #000000 !important;
+    -moz-box-shadow: 1 10px 6px -6px #777 !important;
+    box-shadow: 1 10px 6px -6px #777 !important;
+}
+
+.skills-container .card .card-title {
+    text-align: center;
+    color: #2b2c2f;
+    padding-bottom: 5px;
+    box-shadow: 0 5px 6px -5px #777;
+}
+
+.card-skill-div {
+    margin: 20px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-icon {
+    width: 80px;
+    /* height: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px 0px;
+    box-shadow: 0 -1px 4px -1px #777;
+}
+
+.skill-icon-img {
+    width: 60%;
+    height: calc(100% - 20px);
+    object-fit: contain;
+}
+
+.skill-icon-text {
+    font-size: 12px;
+    margin: 2px 0px 0px 0px;
+    color: #2b2c2f;
+}
+
+/* SKILLS SECTION CSS Ends Here */
 
 
 .satisfy-regular {
