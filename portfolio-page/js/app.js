@@ -148,7 +148,7 @@ $(document).ready(function() {
     // Send data using Ajax
     $.ajax({
       type: "POST",
-      url: "/portfolio-page/php/contact.php",
+      url: "http://imronit.in/portfolio-page/php/contact.php",
       data: {
         name: name,
         email: email,
@@ -159,7 +159,7 @@ $(document).ready(function() {
       encode: true
     })
       .done(function(response) {
-        let data = JSON.parse(response);
+        let data = response;
         if (data.status == "error") {
           $(".form-message")
             .text(data.message)
