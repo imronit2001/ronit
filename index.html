@@ -14,7 +14,12 @@
 
     <!--Custom Style  -->
     <link rel="stylesheet" type="text/css" href="/portfolio-page/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/portfolio-page/css/mobile.css" />
     <link rel="stylesheet" type="text/css" href="/portfolio-page/css/particles.css" />
+    <link rel="stylesheet" type="text/css" href="/portfolio-page/css/timeline.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Favicon Meta Tags -->
     <link rel="shortcut icon" href="/portfolio-page/img/favicon.ico">
@@ -22,7 +27,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/portfolio-page/img/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/portfolio-page/img/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/portfolio-page/img/favicon.ico">
-    <link rel="manifest" href="/site.webmanifest">
 
     <!-- Open Graph Meta Tags for Social Media -->
     <meta property="og:title" content="Ronit Singh || Software Developer">
@@ -70,14 +74,15 @@
 <body>
     <header>
         <h1>Ronit Singh</h1>
-        <nav>
-            <ul>
+        <nav class="header-nav">
+            <ul class="header-ul">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <span class="nav-toggle"><i class="fa-solid fa-bars"></i></span>
     </header>
 
     <main>
@@ -305,6 +310,7 @@
             <div class="services-container">
                 <div class="card">
                     <div class="card-body">
+                        <div class="card-logo"><i class="fa-solid fa-laptop-code"></i></div>
                         <h5 class="card-title">Software Development</h5>
                         <p class="card-subtitle">Comprehensive Development Services</p>
                         <ul>
@@ -314,6 +320,7 @@
                 </div>
                 <div class="card">
                     <div class="card-body">
+                        <div class="card-logo"><i class="fa-brands fa-searchengin"></i></div>
                         <h5 class="card-title">Search Engine Optimization (SEO)</h5>
                         <p class="card-subtitle">Boost Your Website’s Visibility</p>
                         <ul>
@@ -323,6 +330,7 @@
                 </div>
                 <div class="card">
                     <div class="card-body">
+                        <div class="card-logo"><i class="fa-solid fa-book-open-reader"></i></div>
                         <h5 class="card-title">Tech Guide & Tutorials</h5>
                         <p class="card-subtitle">Comprehensive Development Services</p>
                         <ul>
@@ -332,6 +340,7 @@
                 </div>
                 <div class="card">
                     <div class="card-body">
+                        <div class="card-logo"><i class="fa-solid fa-palette"></i></div>
                         <h5 class="card-title">UI/UX Design</h5>
                         <p class="card-subtitle">Crafting User-Centric Experiences</p>
                         <ul>
@@ -341,6 +350,7 @@
                 </div>
                 <div class="card">
                     <div class="card-body">
+                        <div class="card-logo"><i class="fa-solid fa-mobile-screen-button"></i></div>
                         <h5 class="card-title">Responsive Web Design</h5>
                         <p class="card-subtitle">Perfect on Any Device</p>
                         <ul>
@@ -350,6 +360,7 @@
                 </div>
                 <div class="card">
                     <div class="card-body">
+                        <div class="card-logo"><i class="fa-solid fa-gears"></i></div>
                         <h5 class="card-title">Website Maintenance & Support</h5>
                         <p class="card-subtitle">Keeping Your Website Secure and Updated</p>
                         <ul>
@@ -361,7 +372,164 @@
         </section>
         <!-- Services Section Ends Here -->
 
+        <!-- Portfolio Section Starts Here -->
+        <section id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <ul class="portfolio-nav">
+                <li class="portfolio-nav-item active" data-type="education">Education</li>
+                <li class="portfolio-nav-item" data-type="experience">Experience</li>
+                <li class="portfolio-nav-item" data-type="projects">Projects</li>
+                <li class="portfolio-nav-item" data-type="certificates">Certificates</li>
+                <li class="portfolio-nav-item" data-type="youtube">Youtube</li>
+
+            </ul>
+            <div class="portfolio-container">
+                <ul class="timeline portfolio-block active" data-type="education">
+                    <li style="--accent-color:#41516C">
+                        <div class="date">2024, M.C.A</div>
+                        <div class="title">Techno College Hooghly</div>
+                        <div class="descr">Completed advanced studies in computer applications, focusing on software development and data management. Enhanced skills in various programming languages and frameworks.</div>
+                    </li>
+                    <li style="--accent-color:#FBCA3E">
+                        <div class="date">2022, B.C.A</div>
+                        <div class="title">Techno India Hooghly Campus</div>
+                        <div class="descr">Acquired foundational knowledge in computer science and application development. Developed expertise in programming languages and web technologies.</div>
+                    </li>
+                    <li style="--accent-color:#E24A68">
+                        <div class="date">2019, H.S</div>
+                        <div class="title">Kankinara High School</div>
+                        <div class="descr">Completed higher secondary education with a focus on science and mathematics. Developed critical thinking and problem-solving skills essential for advanced studies.</div>
+                    </li>
+                    <li style="--accent-color:#1B5F8C">
+                        <div class="date">2017, Madhyamik</div>
+                        <div class="title">Kankinara Arya Vidyalaya</div>
+                        <div class="descr">Achieved foundational education with a strong emphasis on language and numerical skills. Established a solid groundwork for future academic pursuits.</div>
+                    </li>
+                </ul>
+
+                <ul class="timeline portfolio-block" data-type="experience">
+                    <li style="--accent-color:#41516C">
+                        <div class="date">02/24-Present, Software Developer</div>
+                        <div class="title">Triophase Global Pvt. Ltd.</div>
+                        <div class="descr">Currently developing innovative software solutions and collaborating with cross-functional teams to enhance product functionality. Leveraging expertise in programming languages and frameworks to drive efficiency and user satisfaction.</div>
+                    </li>
+                    <li style="--accent-color:#E24A68">
+                        <div class="date">09/23-02/24, Web Team Lead</div>
+                        <div class="title">Nextgen Techno Ventures Pvt. Ltd.</div>
+                        <div class="descr">Led a team of developers to design and implement web applications, ensuring timely project delivery and adherence to best practices. Fostered a collaborative environment that promoted creativity and technical growth among team members.</div>
+                    </li>
+                    <li style="--accent-color:#FBCA3E">
+                        <div class="date">10/22-09/23, SDE Trainee</div>
+                        <div class="title">Nextgen Techno Ventures Pvt. Ltd.</div>
+                        <div class="descr">Gained hands-on experience in software development, contributing to various projects and enhancing coding skills. Collaborated with senior developers to learn best practices and participate in code reviews for continuous improvement.</div>
+                    </li>
+                    <li style="--accent-color:#1B5F8C">
+                        <div class="date">05/22-10/22, Php Developer Intern</div>
+                        <div class="title">Nextgen Techno Ventures Pvt. Ltd.</div>
+                        <div class="descr">Assisted in developing and maintaining web applications using PHP, gaining practical knowledge of backend development. Contributed to debugging and testing processes, ensuring high-quality code and user experience.</div>
+                    </li>
+                </ul>
+
+                <div class="portfolio-block" data-type="projects">
+
+                </div>
+
+                <div class="portfolio-block" data-type="certificates">
+
+                </div>
+
+                <div class="portfolio-block" data-type="youtube">
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Portfolio Section Ends Here -->
+
+        <!-- Contact Section Starts Here -->
+        <section id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">I’m always excited to connect with individuals and businesses looking to turn ideas into reality. Whether you’re in need of a full-stack developer for your next project, need help with a digital marketing strategy, or have any questions, feel free to reach out!</p>
+            <div class="contact-container">
+                <div class="left-panel">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <div class="input-group">
+                                <div class="input-icon"><i class="fas fa-user"></i></div>
+                                <input type="text" class="form-control" placeholder="Enter your name" name="name" id="name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <div class="input-group">
+                                <div class="input-icon"><i class="fas fa-envelope"></i></div>
+                                <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Mobile Number</label>
+                            <div class="input-group">
+                                <div class="input-icon"><i class="fas fa-phone"></i></div>
+                                <input type="tel" maxlength="10" minlength="10" class="form-control" placeholder="Enter your mobile number" name="mobile" id="mobile" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <div class="input-group">
+                                <div class="input-icon"><i class="fa-regular fa-comment"></i></div>
+                                <textarea class="form-control" placeholder="Enter your message" name="message" id="message" required cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="submit-btn">
+                            <p class="form-message"></p>
+                            <button type="submit" class="btn-1 outer-shadow outer-shadw hover-in-shadow submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="right-panel">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2442.5598999550107!2d88.40603939019994!3d22.85224550900652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x39f896d5a2a7db1d%3A0xf2c4c803f21b97bc!2sSuhas%20Lodge%2C%20Sthirpara%2C%20Kankinara%2C%20Jagatdal%2C%20Bhatpara%2C%20West%20Bengal%20743125!3m2!1d22.8517522!2d88.4045924!5e0!3m2!1sen!2sin!4v1727602039409!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section Ends Here -->
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Ronit Singh. All Rights Reserved.</p>
+            <p>Designed and Developed by <a href="#">Ronit Singh</a></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/imronit/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/imronit2001/" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.youtube.com/@imronit2001" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://wa.me/917003622801" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:ronitsingh7003@gmail.com" aria-label="Gmail">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>H/No 182/1, Sthirpara Road, P.O – Mondalpara, Dist- North 24 Paragana, Jagadal, Pin- 743127, Kolkata, West Bengal, India</p>
+        </div>
+    </footer>
+
+
+
+
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Typing Library -->
