@@ -156,8 +156,30 @@
 }
 
 @media screen and (max-width: 600px) {
+    .timeline li {
+        --inlineP: 0px !important;
+    }
+
+    .timeline {
+        padding: 0px !important;
+        --row-gap: 0px !important
+    }
+
+    .timeline li .title {
+        padding: 10px !important;
+    }
+
+    .timeline li .descr {
+        padding: 0px 10px 10px 10px !important;
+    }
+
     #home .home-main-container .left-panel {
         padding: 0px 10px;
+        margin-top: -100px;
+    }
+
+    .about-main-container .left-panel .about-me-img-div {
+        width: 90%;
     }
 
     .portfolio-container {
