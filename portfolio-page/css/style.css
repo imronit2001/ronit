@@ -98,6 +98,12 @@ header nav ul li a {
     transition: all 0.3s ease;
 }
 
+header nav ul li a.active {
+    -webkit-box-shadow: 0 8px 9px -6px #777;
+    -moz-box-shadow: 0 8px 9px -6px #777;
+    box-shadow: 0 8px 9px -6px #777;
+}
+
 header nav ul li a:hover {
     -webkit-box-shadow: 0 8px 9px -6px #777;
     -moz-box-shadow: 0 8px 9px -6px #777;
@@ -997,15 +1003,10 @@ footer {
 
 .satisfy-regular {
     font-family: "Satisfy", system-ui;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .eb-garamond {
     font-family: "EB Garamond", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .effect1 {

@@ -84,16 +84,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-    #home .home-main-container .left-panel {
-        padding: 0px 10px;
-    }
-
-    .portfolio-container {
-        padding: 5px;
-        gap: 10px;
-    }
-
+@media screen and (max-width: 750px) {
     header nav ul {
         display: none;
         transition: all 0.3s ease-in-out;
@@ -162,6 +153,17 @@
         color: #fff;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    #home .home-main-container .left-panel {
+        padding: 0px 10px;
+    }
+
+    .portfolio-container {
+        padding: 5px;
+        gap: 10px;
+    }
 
     section>.section-title {
         font-size: 26px;
