@@ -143,6 +143,7 @@ $(document).ready(function() {
         .removeClass("success");
       return;
     }
+    $("#submit").prop("disabled", true);
 
     // Send data using Ajax
     $.ajax({
@@ -157,11 +158,20 @@ $(document).ready(function() {
       dataType: "json",
       encode: true
     })
-      .done(function() {
-        $(".form-message")
-          .text("Thank you for your message, I will get back to you soon.")
-          .addClass("success")
-          .removeClass("error");
+      .done(function(response) {
+        let data = JSON.parse(response);
+        if (data.status == "error") {
+          $(".form-message")
+            .text(data.message)
+            .addClass("error")
+            .removeClass("success");
+        } else {
+          $(".form-message")
+            .text("Thank you for your message, I will get back to you soon.")
+            .addClass("success")
+            .removeClass("error");
+        }
+        $("#submit").prop("disabled", false);
       })
       .fail(function() {
         $(".form-message")
@@ -169,6 +179,7 @@ $(document).ready(function() {
           .addClass("error")
           .removeClass("success");
       });
+    $("#submit").prop("disabled", false);
   });
 
   // Toggle navigation menu on click of nav-toggle
