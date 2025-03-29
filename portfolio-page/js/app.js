@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // import json file
-  $.getJSON("./projects.json", function(data) {
+  $.getJSON("/portfolio-page/js/projects.json", function(data) {
     let projects = data.projects; // Ensure projects is only available here
     let certificates = data.certificates;
     let youtube = data.youtube;
@@ -45,7 +45,7 @@ $(document).ready(function() {
 
     if (selector == "youtube") {
       // import json file
-      $.getJSON("./projects.json", function(data) {
+      $.getJSON("/portfolio-page/js/projects.json", function(data) {
         let youtube = data.youtube;
         let x = 0;
         // Now that projects is loaded, append them to the portfolio-block
