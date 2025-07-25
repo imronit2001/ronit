@@ -115,7 +115,31 @@
                 "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-9/5.png",
                 "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-9/6.png"
             ]
-        }        
+        },
+        {
+            "title": "TaskCraft - Todo App",
+            "description": "Description 1",
+            "url": "https://imronit2001.github.io/ronit/",
+            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-10/1.png",
+            "tools" : [
+                "React Native"
+            ],
+            "screenshots" : [
+                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-10/1.png"
+            ]
+        },
+        {
+            "title": "Calculator",
+            "description": "Description 1",
+            "url": "https://imronit2001.github.io/ronit/",
+            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-11/1.png",
+            "tools" : [
+                "React Native"
+            ],
+            "screenshots" : [
+                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-11/1.png"
+            ]
+        }
     ],
     "certificates" : [
         {
