@@ -81,7 +81,9 @@ $(document).ready(function() {
 
     if (selector == "certificates") {
       // import json file
-      $.getJSON("./projects.json", function(data) {
+      $.getJSON("https://imronit.in/portfolio-page/js/projects.json", function(
+        data
+      ) {
         let certificates = data.certificates;
         let x = 0;
         // Now that projects is loaded, append them to the portfolio-block
